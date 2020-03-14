@@ -1,6 +1,8 @@
-name: 'Terraform GitHub Actions'
+name: 'Terraform CD Workflow'
 on:
-  - pull_request
+  push:
+    branches:    
+      - master
 
 env:
   ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
