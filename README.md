@@ -1,5 +1,6 @@
 * # Configure a blob storage as Terraform backend
-n `RESOURCE_GROUP_NAME=tstate
+```bash
+RESOURCE_GROUP_NAME=tstate
 STORAGE_ACCOUNT_NAME=tstate$RANDOM
 CONTAINER_NAME=tstate
 
@@ -15,4 +16,4 @@ az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOU
 echo "storage_account_name: $STORAGE_ACCOUNT_NAME"
 echo "container_name: $CONTAINER_NAME"
 echo "access_key: $ACCOUNT_KEY"
-`
+```
