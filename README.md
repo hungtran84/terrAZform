@@ -24,3 +24,14 @@ echo "access_key: $ACCOUNT_KEY"
 export ARM_ACCESS_KEY=$ACCOUNT_KEY
 ```
 
+## Setup backend section
+```terraform
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tstate"
+    storage_account_name = "tstate20102"
+    container_name       = "tstate"
+    key                  = "terraform.tfstate"
+  }
+}
+```
