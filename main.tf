@@ -4,6 +4,6 @@ provider "azurerm" {
   features {}
 }
 resource "azurerm_resource_group" "rg" {
-        name = "myRG"
-        location = "westus"
+  name     = "myRG"
+  location = "westus"
 }
