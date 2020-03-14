@@ -1,3 +1,5 @@
+![Terraform CI Workflow](https://github.com/hungtran84/terrAZform/workflows/Terraform%20CI%20Workflow/badge.svg)
+
 ## Configure a blob storage as Terraform backend
 
 ```bash
