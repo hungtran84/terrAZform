@@ -1,4 +1,4 @@
-* # Configure a blob storage as Terraform backend
+## Configure a blob storage as Terraform backend
 ```bash
 RESOURCE_GROUP_NAME=tstate
 STORAGE_ACCOUNT_NAME=tstate$RANDOM
