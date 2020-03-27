@@ -1,4 +1,11 @@
+## Install Azure CLI and login to your Azure
+```bash
+brew update && brew install azure-cli
+
+az login
+```
 ## Configure a blob storage as Terraform backend
+./script/create_backend.sh
 
 ```bash
 RESOURCE_GROUP_NAME=tstate
