@@ -42,3 +42,18 @@ terraform {
   }
 }
 ```
+
+## Set up Terraform access to Azure
+```bash
+export SUBSCRIPTION_ID="your-subscription-id"
+az account set --subscription="${SUBSCRIPTION_ID}"
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/${SUBSCRIPTION_ID}"
+```
+
+Your appId, password, sp_name, and tenant are returned. Make a note of the appId and password.
+
+## Add those credentials to GitHub Action secrets
+ARM_SUBSCRIPTION_ID=your_subscription_id
+ARM_CLIENT_ID=your_appId
+ARM_CLIENT_SECRET=your_password
+ARM_TENANT_ID=your_tenant_id
