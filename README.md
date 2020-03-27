@@ -57,3 +57,5 @@ ARM_SUBSCRIPTION_ID=your_subscription_id
 ARM_CLIENT_ID=your_appId
 ARM_CLIENT_SECRET=your_password
 ARM_TENANT_ID=your_tenant_id
+
+## GitHub Action workflow for Terraform
