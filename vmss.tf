@@ -6,10 +6,10 @@ resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
   instances           = 2
   admin_username      = "adminuser"
 
-    admin_ssh_key {
-      username   = "adminuser"
-      public_key     = file("./id_rsa.pub")
-    }
+  admin_ssh_key {
+    username   = "adminuser"
+    public_key = file("./id_rsa.pub")
+  }
 
   source_image_reference {
     publisher = "Canonical"
