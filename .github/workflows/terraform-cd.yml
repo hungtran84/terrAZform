@@ -21,8 +21,8 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@master
 
-      - name: 'Copy public key over to container'
-        run: cp ./id_rsa.pub ~/.ssh/id_rsa.pub
+      # - name: 'Copy public key over to container'
+      #   run: cp ./id_rsa.pub ~/.ssh/id_rsa.pub
 
       - name: 'Terraform Format'
         uses: hashicorp/terraform-github-actions@master
