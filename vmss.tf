@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
 
   admin_ssh_key {
     username   = "azureuser"
-    public_key = file("./id_rsa.pub")
+    public_key     = file("~/.ssh/id_rsa.pub")
   }
 
   source_image_reference {
