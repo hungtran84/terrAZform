@@ -1,9 +1,9 @@
 resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
-  name                = "puppet5_master"
+  name                = "puppet5"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
-  sku                 = "Standard_F2"
-  instances           = 1
+  sku                 = "Standard_DS1_v2"
+  instances           = 2
   admin_username      = "adminuser"
 
   admin_ssh_key {
