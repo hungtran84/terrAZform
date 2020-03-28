@@ -20,7 +20,7 @@ resource "azurerm_subnet" "bastionSubnet" {
   name                 = "AzureBastionSubnet"
   resource_group_name  = azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.vnet.name
-  address_prefix       = "192.168.1.224/27"
+  address_prefix       = "10.0.2.0/27"
 }
 
 resource "azurerm_public_ip" "bastionIP" {
